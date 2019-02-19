@@ -1,0 +1,23 @@
+{
+  "name": "spring-cloud-config-client-js",
+  "version": "1.0.0",
+  "description": "js for fetch spring cloud config files",
+  "main": "dist/index.js",
+  "repository": "https://ignocide@github.com/ignocide/spring-cloud-confg-client-js.git",
+  "author": "ignocide <ignocide@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^11.9.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "scripts": {
+    "test": "nodemon --watch 'example/**/*' -e ts,tsx --exec 'ts-node' ./example/index.ts",
+    "build": "rm -rf ./dist && tsc"
+  }
+}
