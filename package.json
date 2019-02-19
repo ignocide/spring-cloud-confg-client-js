@@ -2,7 +2,7 @@
   "name": "spring-cloud-config-client-js",
   "version": "1.0.0",
   "description": "js for fetch spring cloud config files",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "repository": "https://ignocide@github.com/ignocide/spring-cloud-confg-client-js.git",
   "author": "ignocide <ignocide@gmail.com>",
   "license": "MIT",
