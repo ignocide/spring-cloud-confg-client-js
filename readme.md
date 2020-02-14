@@ -19,7 +19,7 @@ import SpringCloudConfigClient from 'spring-cloud-config-client-js'
 
 //initial
 const springCloudConfigClient = new SpringCloudConfigClient({
-    configServerUrl: "http://127.0.0.1:8888"
+    configServerUrl: "[config-server-url]"
     // if you use server with spring security, set auth info
     // is optional
     auth: {
@@ -29,17 +29,17 @@ const springCloudConfigClient = new SpringCloudConfigClient({
 })
 
 springCloudConfigClient.fetch({
-    name: 'configserver-client',
+    name: '[your-application]',
     //profile is optional 
-    profile: 'dev'
+    profile: '[your-profile]'
 }).then(console.log).catch(console.error)
 
 //write file with absolute path
 //save and will return config too
 springCloudConfigClient.write(__dirname + '/config.json', {
-    name: 'configserver-client',
+    name: '[your-application]',
     //profile is optional 
-    profile: 'dev'
+    profile: '[your-profile]'
 }).then(console.log).catch(console.error)
 
 ```
